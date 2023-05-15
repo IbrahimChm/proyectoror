@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proyectos</title>
+  <!-- Enlaces a tus archivos de CSS y Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="pokemon.css">
+  <script src="javascripts/javascript.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <!-- Contenido de tu navbar -->
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <%= image_tag "projects/01.png", class: "card-img-top", alt: "Project Image" %>
+          <div class="card-body">
+            <h5 class="card-title">007.Squirtle</h5>
+            <p class="card-text">Cuando retrae su largo cuello en el caparazón, dispara agua a una presión increíble.</p>
+            <a href="#" class="btn btn-primary" onclick="toggleText('squirtle-text')">Ver más</a>
+            <div class="additional-text" id="squirtle-text" style="display: none;">
+              <!-- Texto adicional -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <%= image_tag "projects/02.png", class: "card-img-top", alt: "Project Image" %>
+          <div class="card-body">
+            <h5 class="card-title">008.Wartortle</h5>
+            <p class="card-text">Se lo considera un símbolo de longevidad. Los ejemplares más ancianos tienen musgo sobre el caparazón.
+            </p>
+            <a href="#" class="btn btn-primary" onclick="toggleText('wartortle-text')">Ver más</a>
+            <div class="additional-text" id="wartortle-text" style="display: none;">
+              <!-- Texto adicional -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <%= image_tag "projects/03.png", class: "card-img-top", alt: "Project Image" %>
+          <div class="card-body">
+            <h5 class="card-title">009.Blastoise</h5>
+            <p class="card-text">Para acabar con su enemigo, lo aplasta con el peso de su cuerpo. En momentos de apuro, se esconde en el caparazón.</p>
+            <a href="#" class="btn btn-primary" onclick="toggleText('blastoise-text')">Ver más</a>
+            <div class="additional-text" id="blastoise-text" style="display: none;">
+              asdf
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  function toggleText(elementId) {
+    var element = document.getElementById(elementId);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
