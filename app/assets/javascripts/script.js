@@ -1,7 +1,11 @@
-$(document).ready(function() {
-  $(".btn-primary").click(function() {
-    $(this).siblings(".additional-text").toggle();
-  });
-});
+function toggleText(button) {
+  var cardBody = button.parentNode;
+  var additionalText = cardBody.querySelector('.additional-text');
+  additionalText.classList.toggle('show');
+}
+
+
+
+
 
   
